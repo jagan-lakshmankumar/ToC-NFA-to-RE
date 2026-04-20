@@ -1,0 +1,140 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    padding: 20px;
+    margin: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+h2 {
+    font-size: 18px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 15px 0;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: inline-block;
+    width: 200px;
+    font-weight: bold;
+}
+
+.form-group input {
+    padding: 5px;
+    width: 150px;
+    border: 1px solid #ccc;
+}
+
+textarea {
+    width: 90%;
+    padding: 5px;
+    font-family: monospace;
+    border: 1px solid #ccc;
+}
+
+.instruction {
+    font-size: 12px;
+    color: #666;
+    margin-top: 5px;
+}
+
+button {
+    padding: 8px 15px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.hidden {
+    display: none;
+}
+
+.error {
+    color: red;
+    background-color: #ffe6e6;
+    border: 1px solid red;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 3px;
+}
+
+.step-item {
+    background-color: #fafafa;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 3px;
+}
+
+.step-header {
+    font-weight: bold;
+    color: #007bff;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.step-body p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.math {
+    font-family: monospace;
+    background-color: #eee;
+    padding: 2px 4px;
+    border-radius: 3px;
+    font-weight: bold;
+    border: 1px solid #ddd;
+}
+
+.final-box {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #e6f7ff;
+    border: 1px solid #91d5ff;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.final-box h3 {
+    margin-top: 0;
+    color: #0050b3;
+}
+
+#final-re {
+    font-family: monospace;
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+}

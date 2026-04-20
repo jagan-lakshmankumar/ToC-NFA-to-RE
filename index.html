@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NFA to RE Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>NFA to Regular Expression</h1>
+        <p>Using State Elimination Method</p>
+        <hr>
+        
+        <div id="input-section">
+            <h2>Configure NFA</h2>
+            
+            <div class="form-group">
+                <label>Number of states (2-6):</label>
+                <input type="number" id="num-states" min="2" max="6" value="3">
+            </div>
+            
+            <div class="form-group">
+                <label>Start state:</label>
+                <input type="text" id="start-state" value="q0" placeholder="e.g. q0">
+            </div>
+            
+            <div class="form-group">
+                <label>Final state(s):</label>
+                <input type="text" id="final-state" value="q2" placeholder="e.g. q2, q3">
+            </div>
+            
+            <div class="form-group">
+                <label>Alphabet (&Sigma;):</label>
+                <input type="text" id="alphabet" value="a, b, c" placeholder="e.g. a, b">
+            </div>
+
+            <div class="form-group">
+                <label>Transitions (one per line):</label><br>
+                <textarea id="transitions" rows="6" cols="40" placeholder="q0, q1, a"></textarea>
+                <div class="instruction">
+                    Format: Source, Destination, Symbol<br>
+                    Example: q0, q1, a
+                </div>
+            </div>
+
+            <div id="error-message" class="hidden error"></div>
+
+            <button id="btn-convert">Convert to RE</button>
+        </div>
+
+        <div id="results-section" class="hidden">
+            <h2>State Elimination Steps</h2>
+            <div id="steps-container"></div>
+            
+            <div class="final-box">
+                <h3>Final Regular Expression:</h3>
+                <div id="final-re"></div>
+            </div>
+
+            <button id="btn-reset">Start Over</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
